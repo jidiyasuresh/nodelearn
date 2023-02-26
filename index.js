@@ -18,3 +18,9 @@
 // const fs = require('fs').writeFileSync;
 
 // fs("test.txt","This file added for testing purpose.");
+
+const http = require('http');
+http.createServer((req,res) =>{
+    res.write("Hello this is suresh jidiya");
+    res.end();
+}).listen(3000);
